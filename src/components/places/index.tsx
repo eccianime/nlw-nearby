@@ -3,6 +3,7 @@ import { useRef } from 'react';
 import { Text, useWindowDimensions } from 'react-native';
 import { Place, PlaceProps } from '../place';
 import { styles } from './styles';
+import { router } from 'expo-router';
 
 type PlacesProps = {
   data: PlaceProps[];
@@ -26,7 +27,12 @@ export function Places({ data }: PlacesProps) {
     >
       <BottomSheetFlatList
         data={data}
-        renderItem={({ item }) => <Place data={item} />}
+        renderItem={({ item }) => (
+          <Place
+            data={item}
+            onPress={() => router.navigate(`/market/${item.id}`)}
+          />
+        )}
         keyExtractor={(item) => item.id}
         contentContainerStyle={styles.content}
         ListHeaderComponent={() => (
