@@ -18,7 +18,7 @@
     "@gorhom/bottom-sheet": "^5.1.1",
     "@react-navigation/native": "^7.0.14",
     "@tabler/icons-react-native": "^3.30.0",
-    "axios": "^1.8.1",
+    "axios": "^1.12.0",
     "expo": "~52.0.37",
     "expo-camera": "~16.0.17",
     "expo-font": "~13.0.4",
