@@ -19,7 +19,7 @@
     "@react-navigation/native": "^7.0.14",
     "@tabler/icons-react-native": "^3.30.0",
     "axios": "^1.8.1",
-    "expo": "~52.0.37",
+    "expo": "~53.0.0",
     "expo-camera": "~16.0.17",
     "expo-font": "~13.0.4",
     "expo-linking": "~7.0.5",
